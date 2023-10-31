@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LGA Results</title>
+</head>
+<body>
+    <table>
+        <tr><td><a href="{% url 'pollapp:polling_unit_result' %}">View Pulling Unit Result</a></td></tr>
+    </table>
+
+    <table>
+        <tr><td><a href="{% url 'pollapp:lga_result' %}">View LGA Result</a></td></tr>
+    </table>
+    <p>Total result in {{get_lga}} LGA : {{lga_name_total_result}}</p>
+</body>
+</html>

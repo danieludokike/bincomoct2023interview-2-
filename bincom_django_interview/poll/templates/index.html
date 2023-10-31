@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Election Result Web App</title>
+</head>
+<body>
+    <h1>View Election Results</h1>
+    <table>
+        <tr><td><a href="{% url 'pollapp:polling_unit_result' %}">View Pulling Unit Result</a></td></tr>
+    </table>
+
+    <table>
+        <tr><td><a href="{% url 'pollapp:lga_result' %}">View LGA Result</a></td></tr>
+    </table>
+</body>
+</html>

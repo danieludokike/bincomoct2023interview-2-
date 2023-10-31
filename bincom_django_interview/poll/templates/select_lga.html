@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LGA Result </title>
+</head>
+<body>
+    <h1>LGA Results</h1>
+    <form action="{% url 'pollapp:lga_result' %}" method="POST" role="form">
+        {% csrf_token %}
+        {{form}}
+        <button type="submit">View LGA Result</button>
+    </form>
+</body>
+</html>
